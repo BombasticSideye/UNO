@@ -1,3 +1,7 @@
+#To do list:
+#Color codes.
+#W and s menus.
+
 import random
 
 from useful_modules import user_choice_select as user_choice
