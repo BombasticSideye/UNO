@@ -1,11 +1,10 @@
 #To do list:
 #Color codes.
 #W and s menus.
+#Classes.
 
 import random
-
-from useful_modules import user_choice_select as user_choice
-from useful_modules import clear_console as cl
+import os
 
 colour = None
 colours = ["Red", "Yellow", "Green", "Blue"]
@@ -69,7 +68,6 @@ class distribution:
 
         print("\nOrganising cards...\n")
 
-        # Create deck
         deck = []
         for color in colours:
             color_cards = {
@@ -114,8 +112,8 @@ class distribution:
 
 def shuffle(cards):
     global deck
-    for i in range(100): # ENSURE RANDOMNESS!!!
-        random.shuffle(cards)  # Shuffle the cards in place
+    for i in range(400000):
+        random.shuffle(cards)
     deck = cards
 
 
@@ -321,6 +319,3 @@ if __name__ == "__main__":
         deck = pile
         pile = []
         shuffle(deck)
-
-
-
