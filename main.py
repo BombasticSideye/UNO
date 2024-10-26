@@ -1,7 +1,7 @@
-#To do list:
-#Color codes.
-#W and s menus.
-#Classes.
+# To do list:
+# Color codes.
+# W and s menus.
+# Classes.
 
 import random
 import os
